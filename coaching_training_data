@@ -1,0 +1,200 @@
+[
+  {
+    "id": "train_001",
+    "category": "batting_biomechanics",
+    "prd_module": "3.2_ai_video_analyzer",
+    "input_prompt": "My head falls outside off-stump while playing front-foot drives and I get bowled through the gate.",
+    "context_metrics": {
+      "head_alignment": "drifting_offside",
+      "front_knee_flexion_deg": 148,
+      "bat_speed_kmh": 84
+    },
+    "coach_response": "When your head drifts past off-stump before contact, the gap opens between bat and pad against incoming or straight deliveries. Keep your eyes level on the ball and let your front knee bend toward the pitch rather than collapsing outward. Drill: Shadow-bat with a marker cone 6 inches outside off-stump; keep your head and front shoulder inside that line through impact.",
+    "training_tags": ["head_alignment", "front_foot_drive", "gate_dismissal", "biomechanics"]
+  },
+  {
+    "id": "train_002",
+    "category": "batting_biomechanics",
+    "prd_module": "3.2_ai_video_analyzer",
+    "input_prompt": "I keep nicking balls pitched on fourth stump to the wicketkeeper or slips.",
+    "context_metrics": {
+      "bat_face_angle_impact": "open",
+      "impact_point_timing": "early_reach",
+      "stance_balance_index": 0.72
+    },
+    "coach_response": "Slips edges usually happen when you reach out with stiff bottom-hand force and an open bat face instead of playing late under your eyes. Soften your bottom hand, let the ball travel closer, and keep the bat face squarer at impact. Drill: Side-arm or underarm feeds from 6 yards focusing on defending or punching straight back with a controlled top-hand grip.",
+    "training_tags": ["open_bat_face", "slip_edges", "top_hand_control", "leave_or_play"]
+  },
+  {
+    "id": "train_003",
+    "category": "batting_biomechanics",
+    "prd_module": "3.2_ai_video_analyzer",
+    "input_prompt": "How can I generate more bat speed without losing balance in my crease?",
+    "context_metrics": {
+      "backswing_angle_deg": 78,
+      "bat_speed_kmh": 76,
+      "stance_balance_index": 0.88
+    },
+    "coach_response": "Bat speed comes from smooth hip-to-shoulder rotation and a clean, unhurried backswing rather than yanking the bat fast at the start. Stay balanced on the balls of your feet and accelerate smoothly through the hitting zone. Drill: 3 sets of 10 tee hits pausing 1 second at top of backswing before accelerating through the ball.",
+    "training_tags": ["bat_speed", "backswing", "kinetic_chain", "power_hitting"]
+  },
+  {
+    "id": "train_004",
+    "category": "batting_biomechanics",
+    "prd_module": "3.2_ai_video_analyzer",
+    "input_prompt": "My backlift goes way across toward gully and makes my downswing crooked.",
+    "context_metrics": {
+      "backswing_path": "across_to_gully",
+      "impact_point_timing": "late",
+      "head_alignment": "slight_tilt"
+    },
+    "coach_response": "A backlift dragging across toward gully forces you to loop the bat back into the line, hurting timing on faster deliveries. Lift the bat smoothly toward second slip or straighter behind the stumps so the path into the ball stays direct. Drill: Practice slow-motion backlift-to-impact checkpoints in front of a mirror for 5 minutes.",
+    "training_tags": ["backlift", "bat_path", "timing", "biomechanics"]
+  },
+  {
+    "id": "train_005",
+    "category": "shot_selection_simulation",
+    "prd_module": "3.3_vr_ar_simulation",
+    "input_prompt": "Against an off-spinner on a dry pitch, should I sweep or step out to drive?",
+    "context_metrics": {
+      "bowler_type": "off_spin",
+      "pitch_condition": "dry_turning",
+      "ball_trajectory": "good_length_turning_in"
+    },
+    "coach_response": "On a dry pitch where the ball turns in, sweeping a good-length ball carries high LBW/top-edge risk unless it is clearly full or leg-side. Use your feet to get to the pitch of the ball and drive with the spin into the off-side or straight, or work it off the back foot into mid-wicket. Drill: Cone-target drill hitting straight/extra-cover drives off spun feeds.",
+    "training_tags": ["off_spin", "shot_selection", "footwork", "dry_pitch"]
+  },
+  {
+    "id": "train_006",
+    "category": "shot_selection_simulation",
+    "prd_module": "3.3_vr_ar_simulation",
+    "input_prompt": "Fast bowlers keep bowling bouncers at my chest when I set up to pull.",
+    "context_metrics": {
+      "bowler_type": "pace",
+      "ball_trajectory": "short_bouncer",
+      "reaction_time_ms": 460
+    },
+    "coach_response": "If you commit to the pull too early or stay flat-footed, chest-high pace gets on you quickly. Pick the length early from the bowler's release point: pull only balls that sit up comfortably in your zone, and duck or sway cleanly inside balls rising at your ribcage/head. Drill: Half-pitch short-ball reaction drill calling 'play' or 'leave/duck' before impact.",
+    "training_tags": ["bouncer", "pull_shot", "reaction_time", "pace_bowling"]
+  },
+  {
+    "id": "train_007",
+    "category": "shot_selection_simulation",
+    "prd_module": "3.3_vr_ar_simulation",
+    "input_prompt": "How do I decide whether to leave or defend a ball outside off-stump early in an innings?",
+    "context_metrics": {
+      "phase": "powerplay_early_innings",
+      "ball_line": "outside_off_5th_stump",
+      "risk_tolerance": "low"
+    },
+    "coach_response": "Early in your innings, if a ball is outside off-stump and not threatening the stumps, leaving it saves energy and removes edge risk—especially when the ball seams or swings. Defend only balls that threaten your stumps or top of off. Drill: 'Leave-only' 12-ball net set where you must shoulder arms to anything outside off stump.",
+    "training_tags": ["leaving_ball", "early_innings", "discipline", "shot_selection"]
+  },
+  {
+    "id": "train_008",
+    "category": "bowling_biomechanics",
+    "prd_module": "3.2_ai_video_analyzer",
+    "input_prompt": "My front knee buckles when I land in my delivery stride and I lose pace.",
+    "context_metrics": {
+      "front_knee_flexion_delivery_deg": 132,
+      "run_up_velocity_mps": 5.8,
+      "release_point": "inconsistent"
+    },
+    "coach_response": "When your front knee buckles at delivery stride, forward momentum leaks downward instead of transferring into ball release, while adding strain to your lower back. Strengthen your front-leg brace and drive your non-bowling arm down firmly as you release. Drill: 6-step run-up bowling focusing on a braced front leg and smooth follow-through.",
+    "training_tags": ["front_knee_brace", "bowling_pace", "delivery_stride", "injury_prevention"]
+  },
+  {
+    "id": "train_009",
+    "category": "bowling_biomechanics",
+    "prd_module": "3.2_ai_video_analyzer",
+    "input_prompt": "My arm angle drops and my ball swings down leg instead of holding line.",
+    "context_metrics": {
+      "arm_angle_deg": 152,
+      "release_point": "low_wide",
+      "head_alignment": "tilted_left"
+    },
+    "coach_response": "A dropping arm angle and head tilt pull your release point wider and flatter, causing deliveries to drift down leg. Keep your head tall and aligned with your target so your bowling arm comes over cleanly at a consistent height. Drill: Bowling with a target string or cone on good length from a short run-up.",
+    "training_tags": ["arm_angle", "release_point", "line_and_length", "bowling"]
+  },
+  {
+    "id": "train_010",
+    "category": "ball_by_ball_analytics",
+    "prd_module": "3.1_match_analytics_engine",
+    "input_prompt": "In my last 6 T20 innings, I scored 168 runs off 135 balls with 18 fours and 3 sixes. What is the real issue?",
+    "context_metrics": {
+      "runs": 168,
+      "balls_faced": 135,
+      "strike_rate": 124.44,
+      "boundary_runs": 90,
+      "dot_ball_pct": 38.5
+    },
+    "coach_response": "Over half your runs (90 of 168) came from boundaries, so your boundary hitting isn't the main bottleneck—your 38.5% dot-ball rate is slowing your momentum. Cut dot balls toward ~28–30% by knocking length balls into gaps for ones and twos right after a boundary. Drill: 30-ball simulation aiming for at least 12 singles/twos with zero consecutive dot balls.",
+    "training_tags": ["strike_rate", "dot_ball_percentage", "t20_analytics", "rotation_of_strike"]
+  },
+  {
+    "id": "train_011",
+    "category": "ball_by_ball_analytics",
+    "prd_module": "3.1_match_analytics_engine",
+    "input_prompt": "As a death-overs bowler (overs 17-20), my economy is 10.8 but I pick up wickets. How do I tighten up?",
+    "context_metrics": {
+      "phase": "death_overs_17_20",
+      "economy_rate": 10.8,
+      "dot_ball_pct": 24.0,
+      "boundary_conceded_pct": 19.5
+    },
+    "coach_response": "Wickets in death overs are great, but an economy of 10.8 with 19.5% boundary concessions means too many full tosses or predictable slots are getting hit. Pair wide yorkers outside off-stump with off-cutters into the pitch and vary pace between deliveries. Drill: Death-over yorker + slower-ball target session (6 balls per set, tracking misses outside target).",
+    "training_tags": ["death_overs", "economy_rate", "yorker", "slower_ball"]
+  },
+  {
+    "id": "train_012",
+    "category": "ball_by_ball_analytics",
+    "prd_module": "3.1_match_analytics_engine",
+    "input_prompt": "My ball-by-ball log shows my strike rate drops from 142 in overs 1-6 to 104 in overs 7-15. Why?",
+    "context_metrics": {
+      "powerplay_sr": 142.0,
+      "middle_overs_sr": 104.0,
+      "middle_overs_dismissal_type": "caught_in_deep_or_lbw"
+    },
+    "coach_response": "A sharp dip in middle overs usually happens when fielders spread out and you try to force big hits against spin or pace-off instead of rotating strike and picking one scoring option per over. Target 1 boundary + 3–4 singles/twos per over rather than swinging every ball. Drill: Middle-overs tempo drill focusing on gap placement and rotating strike.",
+    "training_tags": ["middle_overs", "strike_rate_drop", "ball_by_ball", "pacing_innings"]
+  },
+  {
+    "id": "train_013",
+    "category": "rl_virtual_coach",
+    "prd_module": "3.4_rl_virtual_coach",
+    "input_prompt": "State: 14 balls left, 26 runs needed, 4 wickets in hand, left-arm orthodox bowling over the wicket. Best action?",
+    "context_metrics": {
+      "state": {"balls_left": 14, "runs_needed": 26, "wickets_in_hand": 4, "bowler": "left_arm_ortho_over"},
+      "recommended_action": "target_leg_side_or_straight_boundary_avoid_risky_reverse",
+      "reward_signal": "high_boundary_prob_low_wicket_risk"
+    },
+    "coach_response": "With 26 needed off 14 balls and 4 wickets left, you don't need a boundary every ball—you need 2 clean boundaries and smart rotation without losing quick wickets. Against left-arm orthodox over the wicket, look to hit with the turn or straight/down the ground rather than low-percentage reverse sweeps. Drill: Chase-pressure scenario nets with target runs and wicket penalties.",
+    "training_tags": ["rl_state_action", "run_chase", "finishing", "decision_making"]
+  },
+  {
+    "id": "train_014",
+    "category": "rl_virtual_coach",
+    "prd_module": "3.4_rl_virtual_coach",
+    "input_prompt": "State: Powerplay over 3, new ball swinging in, batter just arrived at crease. What should the approach be?",
+    "context_metrics": {
+      "state": {"over": 3, "ball_condition": "new_swinging_in", "batter_balls_faced": 2},
+      "recommended_action": "compact_defense_leave_wide_play_straight",
+      "reward_signal": "survival_and_settle_crease"
+    },
+    "coach_response": "In Over 3 with new-ball swing and only 2 balls faced, survival and settling your eyes come before aggressive scoring. Leave balls wide outside off, play straight deliveries with a tight V, and take easy singles to get off the mark. Drill: First-5-balls-at-the-crease simulation under time/pressure.",
+    "training_tags": ["rl_state_action", "powerplay", "new_ball", "settling_in"]
+  },
+  {
+    "id": "train_015",
+    "category": "coach_hitl_feedback",
+    "prd_module": "3.2_human_in_the_loop",
+    "input_prompt": "AI tagged my cover drive as 'late impact', but my coach said my front foot was planted too wide. How do I read that?",
+    "context_metrics": {
+      "ai_tag": "late_impact",
+      "coach_override_tag": "wide_front_foot_stride",
+      "front_stride_width": "excessive"
+    },
+    "coach_response": "When your front foot steps too wide across or outside the line, your hips lock up and your bat arrives late on drives. Fix the stride width first so your front hip can clear naturally—once your stride is balanced, your impact timing usually corrects itself. Drill: Line-on-turf stride check before driving.",
+    "training_tags": ["hitl_feedback", "stride_width", "cover_drive", "coach_override"]
+  }
+]
