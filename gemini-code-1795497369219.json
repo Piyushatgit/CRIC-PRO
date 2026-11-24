@@ -1,0 +1,148 @@
+[
+  {
+    "id": "bbb_train_001",
+    "category": "ball_by_ball_analytics",
+    "prd_module": "3.1_match_analytics_engine",
+    "input_prompt": "Here is my ball-by-ball log for Overs 1-6 (18 balls faced): 0, 1, 4, 0, 0, 6 | 1, 0, 2, 0, 4, 0 | 0, 1, 1, 6, 0, 2. How did my powerplay go?",
+    "context_metrics": {
+      "phase": "powerplay_1_6",
+      "balls_faced": 18,
+      "runs_scored": 28,
+      "strike_rate": 155.56,
+      "fours": 2,
+      "sixes": 2,
+      "dots": 8,
+      "dot_ball_pct": 44.44,
+      "ball_by_ball_sequence": [0, 1, 4, 0, 0, 6, 1, 0, 2, 0, 4, 0, 0, 1, 1, 6, 0, 2]
+    },
+    "coach_response": "Your scoring rate in the powerplay is strong (28 off 18, SR 155.56) with two sixes and two fours, which puts pressure on bowlers early. However, 8 dot balls out of 18 (44.4%) means you are either hitting boundaries or stalling—cutting just 2–3 dot balls into quick singles will push your impact even higher without extra risk. Drill: 18-ball powerplay simulation where every dot ball must be followed by an active gap-find single on the next ball.",
+    "training_tags": ["ball_by_ball", "powerplay", "strike_rate", "dot_ball_percentage"]
+  },
+  {
+    "id": "bbb_train_002",
+    "category": "ball_by_ball_analytics",
+    "prd_module": "3.1_match_analytics_engine",
+    "input_prompt": "Ball-by-ball sequence in Overs 7-12 against spin: 0, 0, 1, 0, 0, 1 | 0, 1, 0, 0, 2, 0. Why is my momentum stalling?",
+    "context_metrics": {
+      "phase": "middle_overs_7_12",
+      "bowler_type": "spin",
+      "balls_faced": 12,
+      "runs_scored": 5,
+      "strike_rate": 41.67,
+      "boundaries": 0,
+      "dots": 8,
+      "dot_ball_pct": 66.67,
+      "ball_by_ball_sequence": [0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 2, 0]
+    },
+    "coach_response": "Facing 12 balls for 5 runs (8 dot balls, 66.7% dots) against spin puts heavy pressure on your non-striker and forces risky slogging later. When the ball isn't in your boundary arc against spin, prioritize working it into soft pockets at cover, point, or mid-wicket for ones and twos rather than defending statically. Drill: 12-ball spin-rotation drill where your only goal is 6+ scoring shots (singles/twos) without hitting in the air.",
+    "training_tags": ["ball_by_ball", "middle_overs", "against_spin", "strike_rotation"]
+  },
+  {
+    "id": "bbb_train_003",
+    "category": "ball_by_ball_analytics",
+    "prd_module": "3.1_match_analytics_engine",
+    "input_prompt": "My death-over bowling log (Over 19): 1, 4, 6, W, 1, 2. How should I evaluate this over?",
+    "context_metrics": {
+      "over_number": 19,
+      "phase": "death_overs_17_20",
+      "balls_bowled": 6,
+      "runs_conceded": 14,
+      "economy_rate": 14.0,
+      "wickets": 1,
+      "dots": 0,
+      "boundaries_conceded": 2,
+      "ball_by_ball_sequence": ["1", "4", "6", "W", "1", "2"]
+    },
+    "coach_response": "Getting a wicket in the 19th over is valuable, and 14 runs isn't catastrophic at the death, but conceding a four, a six, and zero dot balls shows your length became hittable between deliveries. After a boundary, reset immediately with a wide yorker or pace-off slower ball on a consistent line rather than repeating the same slot. Drill: 6-ball 'reset-after-boundary' bowling drill targeting wide yorker and slower cutter cones.",
+    "training_tags": ["ball_by_ball", "death_overs", "bowling_over", "wicket_and_runs"]
+  },
+  {
+    "id": "bbb_train_004",
+    "category": "ball_by_ball_analytics",
+    "prd_module": "3.1_match_analytics_engine",
+    "input_prompt": "Look at my last 10 balls of an innings: 2, 4, 0, 1, 6, 1, 0, 4, 2, 1. What does this ball-by-ball pattern show?",
+    "context_metrics": {
+      "window_balls": 10,
+      "runs_scored": 21,
+      "strike_rate": 210.0,
+      "fours": 2,
+      "sixes": 1,
+      "dots": 2,
+      "dot_ball_pct": 20.0,
+      "ball_by_ball_sequence": [2, 4, 0, 1, 6, 1, 0, 4, 2, 1]
+    },
+    "coach_response": "This is an ideal acceleration pattern: 21 runs off 10 balls (SR 210) with only 2 dot balls (20%) and zero consecutive dots. Notice how you backed up big hits (4 and 6) with ones and twos instead of going quiet—that keeps bowlers off balance. Drill: 10-ball finishing sequence where you alternate boundary intent with controlled singles/twos to keep strike moving.",
+    "training_tags": ["ball_by_ball", "acceleration", "finishing", "low_dot_rate"]
+  },
+  {
+    "id": "bbb_train_005",
+    "category": "ball_by_ball_analytics",
+    "prd_module": "3.1_match_analytics_engine",
+    "input_prompt": "In my opening spell (Over 1), my ball-by-ball log was: 0, 0, 0, 4, 0, 1. Good start or sloppy?",
+    "context_metrics": {
+      "over_number": 1,
+      "phase": "powerplay_1_6",
+      "balls_bowled": 6,
+      "runs_conceded": 5,
+      "economy_rate": 5.0,
+      "dots": 4,
+      "dot_ball_pct": 66.67,
+      "boundaries_conceded": 1,
+      "ball_by_ball_sequence": ["0", "0", "0", "4", "0", "1"]
+    },
+    "coach_response": "5 runs in the first over with 4 dot balls is a solid opening over—you built early pressure with three dots upfront. The single boundary suggests one ball drifted into the batter's zone, so focus on keeping that fourth-stump seam line consistent across all six balls. Drill: First-over simulation bowling 6 consecutive balls at top-of-off channel.",
+    "training_tags": ["ball_by_ball", "opening_over", "new_ball_bowling", "economy"]
+  },
+  {
+    "id": "bbb_train_006",
+    "category": "ball_by_ball_analytics",
+    "prd_module": "3.1_match_analytics_engine",
+    "input_prompt": "Chase situation: 12 balls left, 22 needed. Ball-by-ball so far in last 2 overs: 1, 0, 4, 1, 0, 2 (6 balls left, 14 needed). How should I play the final 6 balls?",
+    "context_metrics": {
+      "balls_remaining": 6,
+      "runs_needed": 14,
+      "previous_6_balls_runs": 8,
+      "previous_6_balls_sequence": [1, 0, 4, 1, 0, 2],
+      "required_run_rate_over": 14.0
+    },
+    "coach_response": "Needing 14 off 6 balls means you need roughly two scoring shots of 4/6 plus smart running—you cannot afford two dot balls in a row. Pick your strongest scoring zone for full or length balls, and convert any mishit or yorker into a hard-run single or two rather than forcing a wild swing. Drill: Last-over 6-ball chase drill starting from 14 needed with target hit/run execution.",
+    "training_tags": ["ball_by_ball", "final_over_chase", "pressure", "game_situation"]
+  },
+  {
+    "id": "bbb_train_007",
+    "category": "ball_by_ball_analytics",
+    "prd_module": "3.1_match_analytics_engine",
+    "input_prompt": "My ball-by-ball log shows a wicket every time I hit two dot balls in a row: 0, 0, W. Why does that keep happening?",
+    "context_metrics": {
+      "pattern_sequence": ["0", "0", "W"],
+      "consecutive_dots_before_wicket": 2,
+      "dismissal_trigger": "self_induced_pressure"
+    },
+    "coach_response": "Back-to-back dot balls build internal pressure, which often makes you play a forced or pre-meditated shot on the third ball against a delivery that doesn't deserve it. Reset mentally after two dots—look for a safe single or leave rather than chasing a boundary out of frustration. Drill: Two-dot reset drill where you must play a controlled defensive or single-run shot on ball 3.",
+    "training_tags": ["ball_by_ball", "wicket_pattern", "pressure_release", "dot_balls"]
+  },
+  {
+    "id": "bbb_train_008",
+    "category": "ball_by_ball_analytics",
+    "prd_module": "3.1_match_analytics_engine",
+    "input_prompt": "Here is a full 24-ball middle-to-death spell for a leg-spinner: 1, 0, 6, 1, W, 0 | 0, 1, 0, 4, 1, 0 | 1, 0, 2, W, 0, 1 | 6, 0, 1, 1, 0, 4. Summary?",
+    "context_metrics": {
+      "balls_bowled": 24,
+      "runs_conceded": 25,
+      "wickets": 2,
+      "economy_rate": 6.25,
+      "dots": 11,
+      "dot_ball_pct": 45.83,
+      "sixes_conceded": 2,
+      "fours_conceded": 2,
+      "ball_by_ball_sequence": [
+        "1", "0", "6", "1", "W", "0",
+        "0", "1", "0", "4", "1", "0",
+        "1", "0", "2", "W", "0", "1",
+        "6", "0", "1", "1", "0", "4"
+      ]
+    },
+    "coach_response": "25 runs and 2 wickets in 24 balls (economy 6.25, 45.8% dots) is a strong spell for a leg-spinner—you attacked, took wickets, and kept the overall rate economical. Your main leak is giving up two sixes and two fours on flighted/fuller balls, so tighten your length slightly after getting hit for a boundary. Drill: 24-ball leg-spin spell drill tracking length consistency after any boundary ball.",
+    "training_tags": ["ball_by_ball", "spell_summary", "leg_spin", "economy_and_wickets"]
+  }
+]
