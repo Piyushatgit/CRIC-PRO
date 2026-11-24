@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Your AI Coach</title>
+  <meta name="description" content="A cricket coach that knows your game, reads your numbers, and talks to you like a person.">
+
+  <!-- Fonts: Fraunces (serif) + Inter (sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ LANDING VIEW ============ -->
+  <section id="landing-view" class="view landing" aria-labelledby="landing-title">
+    <header class="landing-header">
+      <span class="wordmark">Your AI Coach</span>
+    </header>
+
+    <main class="landing-main">
+      <div class="hero">
+        <div class="hero-copy">
+          <h1 id="landing-title" class="headline">Train smarter.<br>Play better.</h1>
+          <p class="subtext">A coach that knows your game, reads your numbers, and talks to you like a person.</p>
+
+          <button id="start-btn" class="btn" type="button">
+            <span>Your AI Coach</span>
+            <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Outline-only bat and ball -->
+        <svg class="hero-art" viewBox="0 0 180 180" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <g transform="rotate(28 96 86)">
+            <rect x="80" y="14" width="32" height="90" rx="7"/>
+            <path d="M88 24v66M96 24v66M104 24v66" opacity=".45"/>
+            <rect x="92" y="104" width="8" height="40" rx="3"/>
+            <path d="M92 116h8M92 124h8M92 132h8" opacity=".45"/>
+          </g>
+          <circle cx="46" cy="136" r="17"/>
+          <path d="M32 126c7 5 7 17 0 22M60 126c-7 5-7 17 0 22"/>
+        </svg>
+      </div>
+
+      <ul class="cards">
+        <li class="card">
+          <h2 class="card-title">Know your numbers</h2>
+          <p class="card-text">Averages and strike rates, explained in plain words.</p>
+        </li>
+        <li class="card">
+          <h2 class="card-title">Fix your technique</h2>
+          <p class="card-text">Small, clear changes to your stance, shots and footwork.</p>
+        </li>
+        <li class="card">
+          <h2 class="card-title">Plan your game</h2>
+          <p class="card-text">Practice weeks and match plans that fit your life.</p>
+        </li>
+      </ul>
+    </main>
+  </section>
+
+  <!-- ============ CHAT VIEW ============ -->
+  <section id="chat-view" class="view chat" aria-label="Chat with your coach" hidden>
+    <header class="chat-bar">
+      <div class="chat-bar-inner">
+        <button id="back-btn" class="back" type="button" aria-label="Back to home">
+          <span aria-hidden="true">←</span> Back
+        </button>
+        <div class="coach-id">
+          <span class="coach-name">Coach</span>
+          <span class="status"><span class="status-dot" aria-hidden="true"></span>online</span>
+        </div>
+      </div>
+    </header>
+
+    <div id="messages" class="messages" role="log" aria-live="polite" aria-label="Conversation">
+      <div id="thread" class="column">
+        <div id="empty-state" class="empty">
+          <p class="empty-greeting">Hey, I'm your coach. Tell me about your game or pick something below.</p>
+          <div id="chips" class="chips">
+            <button class="chip" type="button">How can I improve my cover drive?</button>
+            <button class="chip" type="button">Why do I get out to spin?</button>
+            <button class="chip" type="button">Plan my practice week</button>
+            <button class="chip" type="button">Explain my strike rate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form id="composer" class="composer" autocomplete="off">
+      <div class="composer-inner">
+        <label for="input" class="visually-hidden">Message your coach</label>
+        <textarea id="input" class="input" rows="1" placeholder="Ask your coach anything..." enterkeyhint="send"></textarea>
+        <button id="send-btn" class="send" type="submit" aria-label="Send message" disabled>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
